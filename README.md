@@ -140,4 +140,35 @@ git merge example2
 git add readme.md 
 git commit -m "resolved merge conflict between example1 and example2"
 ```
-gbnvcb
+
+# ts:9 renaming and deleting branch
+1.Rename the branch
+```
+git branch -m old-branch-name new-branch-name
+```
+2.Delete a branch:
+```
+git branch -d feature-login
+```
+# part:3
+# st:10 using git stash
+1.Make changes to a file but don’t commit:
+```
+echo "Temporary work" >> temp.md
+```
+2.stash the changes
+```
+git stash
+```
+3.View stashed changes:
+```
+git stash list
+```
+4.Apply the stashed changes:
+```
+git stash apply
+```
+5.Drop the stash after applying:
+```
+git stash drop
+```
