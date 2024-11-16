@@ -1,2 +1,1 @@
-git new task 1/
-#explaining task-1
+git new task 1
