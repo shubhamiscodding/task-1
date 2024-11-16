@@ -172,3 +172,25 @@ git stash apply
 ```
 git stash drop
 ```
+
+# ts:11 Rewriting History with Interactive Rebase
+1.Create multiple commits:
+```
+echo "Commit 1" > file1.txt && git add file1.txt && git commit -m "Commit 1"
+echo "Commit 2" > file2.txt && git add file2.txt && git commit -m "Commit 2"
+echo "Commit 3" > file3.txt && git add file3.txt && git commit -m "Commit 3"
+```
+2.Squash commits into one:
+```
+git rebase -i HEAD~3
+```
+### Example: Replace pick with squash for the second and third commits. 
+# ts:12 cherry-picking Commits
+1.Create a new branch:
+```
+git checkout -b cherry-pick-example
+```
+2.Cherry-pick a specific commit from another branch:
+```
+git cherry-pick <commit-hash>
+```
