@@ -140,3 +140,4 @@ git merge example2
 git add readme.md 
 git commit -m "resolved merge conflict between example1 and example2"
 ```
+gbnvcb
