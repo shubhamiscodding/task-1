@@ -194,3 +194,53 @@ git checkout -b cherry-pick-example
 ```
 git cherry-pick <commit-hash>
 ```
+# ts:13 Tagging commits
+### 1. tage current commit
+```
+git tag -a v1.0 -m "Version 1.0 release"
+```
+
+### 2.Push your changes to the remote repository:
+```
+git push origin main
+```
+# ts:14  Working with Remote Repositories
+### 1.Add a remote repository:
+```
+git remote add origin <repository-url>
+```
+### 2.Push your changes to the remote repository:
+```
+git push origin main
+```
+
+# ts:15  Forking and Contributing
+### 1.Fork a repository on GitHub.
+### 2.Clone the fork locally:
+```
+git clone <forked-repo-url>
+```
+### 3.Create a new branch, make changes, and push:
+```
+git checkout -b fix-typo
+echo "Typo fixed" >> README.md
+git add README.md
+git commit -m "Fixed a typo"
+git push origin fix-typo
+```
+### 4.Open a pull request on GitHub.
+
+# ts16: Simulate Team Collaboration
+### 1.Create a repository and share it with a friend.
+### 2.Both make changes to the same file simultaneously.
+### 3.Practice resolving merge conflicts and pushing changes.
+
+# ts17:Git Ignore
+### 1.Create a .gitignore file:
+```
+echo "node_modules/" > .gitignore
+```
+### 2.Add files and ensure ignored files are not staged:
+```
+git add .
+```
